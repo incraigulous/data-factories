@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "59c3b91a62e43e70f602fc6f1f1618d4",
+    "content-hash": "262038abffea3519c3cdbd0db6e0c2d5",
+    "packages": [
+        {
+            "name": "kumuwai/data-transfer-object",
+            "version": "v0.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kumuwai/data-transfer-object.git",
+                "reference": "3c673a063361549ed067335c33164dff133922fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kumuwai/data-transfer-object/zipball/3c673a063361549ed067335c33164dff133922fa",
+                "reference": "3c673a063361549ed067335c33164dff133922fa",
+                "shasum": ""
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.3",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kumuwai\\DataTransferObject\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Hatch",
+                    "email": "joel@kumuwai.com"
+                }
+            ],
+            "description": "Load/view dto elements with object, array, json, or dot-notation",
+            "homepage": "https://github.com/kumuwai/data-transfer-object",
+            "keywords": [
+                "array",
+                "dot",
+                "dto",
+                "json"
+            ],
+            "time": "2015-04-08 16:51:09"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

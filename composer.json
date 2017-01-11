@@ -1,0 +1,20 @@
+{
+    "name": "incraigulous/data-factories",
+    "description": "A data factory helper class for mocking objects. I use it for mocking API responses or other objects that aren't persisted in a database.",
+    "type": "composer-plugin",
+    "require": {
+        "kumuwai/data-transfer-object": "^0.0.4"
+    },
+    "license": "WTF",
+    "authors": [
+        {
+            "name": "incraigulous",
+            "email": "me@craigwann.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Incraigulous\\": "src/"
+        }
+    }
+}
