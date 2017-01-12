@@ -1,7 +1,7 @@
 {
     "name": "incraigulous/data-factories",
     "description": "A data factory helper class for mocking objects. I use it for mocking API responses or other objects that aren't persisted in a database.",
-    "type": "composer-plugin",
+    "type": "library",
     "require": {
         "kumuwai/data-transfer-object": "^0.0.4"
     },
