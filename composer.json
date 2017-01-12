@@ -16,5 +16,8 @@
         "psr-4": {
             "Incraigulous\\": "src/"
         }
+    },
+    "suggest": {
+        "fzaninotto/Faker": "You have to bring your own data faker library. I suggest this one."
     }
 }
