@@ -51,7 +51,7 @@ You can return a single factory like this:
 or an array of factories like this:
 
 ```
- $eople = DataFactory::make('person', 10);
+ $people = DataFactory::make('person', 10);
 ```
 
 
