@@ -2,13 +2,13 @@ Data Factories
 --------------
 A data factory helper class for mocking data. This is inspired by Laravel's model factories, the difference being that data factories are not tied to a model. Data factories are great for mocking api responses, requests or other data not persisted to a database. Data Factories are not dependent on Laravel, so you can use this package anywhere.
 
-####Installing
+#### Installing
 
 ```
     composer require incraigulous/data-factories
 ```
 
-####Registering a data factory
+#### Registering a data factory
 
 I'm pulling in `fzaninotto/Faker` for this example, but you'll need to require that yourself if you want to use it.
 
@@ -32,7 +32,7 @@ DataFactory::define('contact-form-request', function() use ($faker) {
 });
 ```
 
-####Bootstrapping
+#### Bootstrapping
 
 You can register your factories where your tests are bootstrapped. Like in your `phpunit` `TestCase` `SetUp` method for example. If you put all your factories in separate files in a factories folder, you might do it like this:
 
@@ -47,7 +47,7 @@ You can register your factories where your tests are bootstrapped. Like in your 
    }
 ```
 
-####Using Factories
+#### Using Factories
 
 You can return a single factory like this:
 
