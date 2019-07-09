@@ -8,16 +8,16 @@ A data factory helper class for mocking data. This is inspired by Laravel's mode
     composer require incraigulous/data-factories
 ```
 
-#### Registering a data factory
+#### Adding a data factories folder
 
-I'm pulling in `fzaninotto/Faker` for this example, but you'll need to require that yourself if you want to use it.
+
+#### Example factory file
 
 ```
-use Incraigulous\DataFactories\DataFactory;
+<?php
+use Faker\Generator as Faker;
 
-$faker = \Faker\Factory::create();
-
-DataFactory::define('contact-form-request', function() use ($faker) {
+$factory->define('test-factory', function(Faker $faker) {
 
     $email = $faker->email;
 
@@ -28,22 +28,17 @@ DataFactory::define('contact-form-request', function() use ($faker) {
         'phone' => $faker->phoneNumber,
         'message' => $faker->paragraph(),
     ];
-
 });
 ```
 
 #### Bootstrapping
 
-You can register your factories where your tests are bootstrapped. Like in your `phpunit` `TestCase` `SetUp` method for example. If you put all your factories in separate files in a factories folder, you might do it like this:
+You can register your factories where your tests are bootstrapped. Like in your `phpunit` `TestCase` `SetUp` method for example. If you put all your factory files in your `/tests/factories` folder , you might do it like this:
 
 ```
   protected function setUp() {
      parent::setUp();
-  
-       foreach (glob(__DIR__.'/factories/*.php') as $filename)
-       {
-           require $filename;
-       }
+     DataFactory::registerPath(__DIR__.'/factories/*.php');
    }
 ```
 
