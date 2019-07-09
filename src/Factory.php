@@ -3,6 +3,7 @@
 namespace Incraigulous\DataFactories;
 
 use Kumuwai\DataTransferObject\DTO;
+use Faker\Factory as Faker;
 
 class Factory
 {
@@ -16,10 +17,11 @@ class Factory
     /**
      * Returns a DTO object to use as the factory.
      *
-     * @return DTO
+     * @return array
      */
     public function make() {
         $closure = $this->closure;
-        return new DTO($closure());
+        $faker = Faker::create();
+        return $closure($faker);
     }
 }

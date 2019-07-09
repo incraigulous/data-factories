@@ -9,6 +9,11 @@ class DataFactory
 {
     public static $factories = [];
 
+    static function registerPath($path) {
+        $registrar = new Registrar();
+        $registrar->registerPath($path);
+    }
+
     /**
      * Register a factory.
      * @param $key
